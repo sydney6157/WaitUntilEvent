@@ -2,9 +2,10 @@
 This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Sydney Larson.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ TESTs the functions in this module (by calling them). """
@@ -29,6 +30,8 @@ def double_a_float():
          Enter a number: -3.14
          -6.28
     """
+    number = float(input('Enter a floating point number: '))
+    print(number*2)
     # ------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #   The testing code is already written for you (above).
@@ -60,6 +63,9 @@ def print_an_integer_many_times():
          10
          10
     """
+    number = int(input('Enter a positive integer: '))
+    for k in range(number):
+        print(number*2)
     # ------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #   The testing code is already written for you (above).
@@ -79,6 +85,10 @@ def print_an_integer_many_times_on_one_row():
          Enter an integer: 5
          1010101010
     """
+    number = int(input('Enter a positive integer: '))
+    for k in range(number):
+        print(number*2,end="")
+    print()
     # ------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #   The testing code is already written for you (above).
@@ -119,6 +129,13 @@ def input_it_all():
          Peace & Love.
          Peace & Love.
     """
+    number = float(input('Enter a floating point number: '))
+    inte = int(input('Enter a positive integer: '))
+    stri = input('Enter a string: ')
+    for k in range (inte):
+        print(math.sqrt(number))
+    for k in range(inte):
+        print(stri)
     # ------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #   The testing code is already written for you (above).
